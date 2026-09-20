@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CONEXA — Soluciones Digitales"
+description = "Catálogo web de servicios digitales exprés de CONEXA, con precios transparentes, tiempos de entrega claros y solicitudes directas para negocios que necesitan avanzar rápido."
+version = "1.0.0"
+id = "artifacts/conexa"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23607
+
+[services.development]
+run = "pnpm --filter @workspace/conexa run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/conexa", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/conexa/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23607"
+BASE_PATH = "/"
