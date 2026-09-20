@@ -81,7 +81,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.25rem;
-  border: 1px solid rgba(11, 31, 51, 0.1);
   border-radius: 1.25rem;
   background: rgba(255, 255, 255, 0.6);
   transition: transform 300ms ease, box-shadow 300ms ease, background 300ms ease;
@@ -89,7 +88,6 @@ body {
 
 .service-card:hover {
   background: #fff;
-  box-shadow: 0 22px 55px rgba(11, 31, 51, 0.1);
   transform: translateY(-5px);
 }
 
