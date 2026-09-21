@@ -1,0 +1,24 @@
+Actúa como un desarrollador frontend experto. Necesito refactorizar la UI/UX de mi plataforma "CONEXA" basándonos en mi código actual. El objetivo es aligerar el diseño de las tarjetas, mejorar el responsive y estructurar el catálogo en una matriz exacta de 3x3. 
+
+Por favor, aplica los siguientes cambios en el HTML/CSS (o Tailwind si lo estás usando):
+
+1. REDISEÑO DEL LAYOUT Y BLOQUES TEMÁTICOS:
+- Agrupa los 9 servicios en 3 secciones o filas independientes con sus propios títulos: "1. Web & Rendimiento", "2. Captación & Automatización" y "3. Marca & Legal".
+- Aplica un color de fondo muy sutil y distinto a cada sección (por ejemplo: blanco para el primero, un gris casi blanco para el segundo, y un tono pastel ultra-claro para el tercero) para diferenciar visualmente los bloques.
+
+2. ESTRUCTURA DE LA MATRIZ 3x3 (GRID):
+- En versión Ordenador (Desktop): Cambia el contenedor de las tarjetas para que sea un grid de exactamente 3 columnas (ej. `grid-cols-3`). Así encajarán los 3 servicios de cada categoría perfectamente en una fila, sin dejar tarjetas sueltas.
+
+3. ALIGERAR LAS TARJETAS (CARD UI):
+- Elimina la etiqueta de la categoría que aparece dentro de la tarjeta (ya no hace falta porque están agrupadas por secciones).
+- Reduce el tamaño de la fuente del precio (los euros) en un 25% para que no compita tanto con el título del servicio.
+- Reduce el padding interior (espaciado interno) de las tarjetas para que se vean menos "pesadas" y más compactas.
+- Cambia el enlace de texto "Solicitar ->" por un botón sólido de estilo secundario (fondo gris claro, texto oscuro) para que el CTA sea más claro pero sin saturar la vista.
+
+4. OPTIMIZACIÓN RESPONSIVE (MÓVIL):
+- En versión Móvil: Al reducir el padding de las tarjetas, ajusta el diseño para que en la pantalla de un teléfono estándar el usuario pueda ver una tarjeta completa y la mitad de la siguiente al mismo tiempo. Esto invitará a hacer scroll.
+
+5. NAVEGACIÓN STICKY:
+- Haz que el Header/Barra superior de navegación sea "sticky" (`position: sticky; top: 0; z-index: 50;`) para que siempre acompañe al usuario mientras baja por el catálogo en móvil y ordenador, con un efecto glassmorphism sutil o fondo blanco sólido para que no se superponga de forma fea con el texto.
+
+Aplica estos cambios en el código y muéstrame el resultado.

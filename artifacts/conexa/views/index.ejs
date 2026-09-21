@@ -39,7 +39,7 @@
   </head>
   <body class="bg-mist text-ink antialiased">
     <div class="min-h-screen overflow-hidden">
-      <header class="relative z-10">
+      <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 lg:px-10">
           <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
             <span class="logo-mark" aria-hidden="true">
@@ -110,7 +110,12 @@
           </div>
         </section>
 
-        <section id="servicios" class="mx-auto max-w-7xl scroll-mt-6 px-6 pb-24 lg:px-10">
+        <% const catalogSections = [
+          { number: "1", title: "Web & Rendimiento", category: "Web & Rendimiento", style: "catalog-section--web" },
+          { number: "2", title: "Captación & Automatización", category: "Captación & Automatización", style: "catalog-section--growth" },
+          { number: "3", title: "Marca & Legal", category: "Marca & Legal", style: "catalog-section--brand" }
+        ]; %>
+        <section id="servicios" class="mx-auto max-w-7xl scroll-mt-24 px-6 pb-24 lg:px-10">
           <div class="mb-10 flex flex-col justify-between gap-5 border-t border-ink/10 pt-6 sm:flex-row sm:items-end">
             <div>
               <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-teal">Catálogo exprés</p>
@@ -119,35 +124,48 @@
             <p class="max-w-xs text-sm leading-6 text-ink/50">Nueve soluciones pensadas para resolver una necesidad real, hoy.</p>
           </div>
 
-          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <% services.forEach((service, index) => { %>
-              <article class="service-card group reveal border border-gray-200 shadow-sm hover:shadow-md" style="--delay: <%= index * 55 %>ms">
-                <div class="flex items-start justify-between gap-4">
-                  <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
-                    <span class="category-label"><%= service.category %></span>
-                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500">
-                      <svg aria-hidden="true" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <path d="M12 7v5l3 2"></path>
-                      </svg>
-                      <%= service.time %>
-                    </span>
+          <div class="space-y-5">
+            <% catalogSections.forEach((section, sectionIndex) => { %>
+              <section class="catalog-section <%= section.style %>">
+                <div class="catalog-section__header">
+                  <div class="flex items-center gap-3">
+                    <span class="section-number"><%= section.number %></span>
+                    <div>
+                      <p class="text-xs font-bold uppercase tracking-[0.18em] text-ink/45">Bloque <%= section.number %></p>
+                      <h3 class="mt-1 font-display text-2xl font-semibold tracking-[-0.055em] text-ink sm:text-3xl"><%= section.title %></h3>
+                    </div>
                   </div>
-                  <span class="tier-dot tier-<%= service.tier.toLowerCase() %>" title="Nivel <%= service.tier %>" aria-label="Nivel <%= service.tier %>"></span>
+                  <span class="hidden text-xs font-semibold uppercase tracking-[0.15em] text-ink/35 sm:block">3 soluciones</span>
                 </div>
-                <h3 class="mt-11 max-w-xs font-display text-2xl font-semibold leading-[1.08] tracking-[-0.055em] text-ink"><%= service.title %></h3>
-                <div class="mt-10">
-                  <span class="font-display text-5xl font-semibold leading-none tracking-[-0.08em] text-ink"><%= service.price %>€</span>
+                <div class="service-grid">
+                  <% services.filter((service) => service.category === section.category).forEach((service, index) => { %>
+                    <article class="service-card group reveal border border-gray-200 shadow-sm hover:shadow-md" style="--delay: <%= (sectionIndex * 3 + index) * 55 %>ms">
+                      <div class="flex items-start justify-end">
+                        <span class="tier-dot tier-<%= service.tier.toLowerCase() %>" title="Nivel <%= service.tier %>" aria-label="Nivel <%= service.tier %>"></span>
+                      </div>
+                      <h4 class="mt-4 max-w-xs font-display text-xl font-semibold leading-[1.1] tracking-[-0.05em] text-ink sm:text-2xl"><%= service.title %></h4>
+                      <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-gray-500">
+                        <svg aria-hidden="true" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <circle cx="12" cy="12" r="9"></circle>
+                          <path d="M12 7v5l3 2"></path>
+                        </svg>
+                        Entrega en <%= service.time %>
+                      </span>
+                      <div class="mt-8">
+                        <span class="font-display text-4xl font-semibold leading-none tracking-[-0.08em] text-ink"><%= service.price %>€</span>
+                      </div>
+                      <a
+                        class="service-action mt-7 inline-flex items-center gap-2 self-start rounded-lg bg-gray-100 px-4 py-2.5 text-sm font-bold text-ink transition-all hover:bg-gray-200 hover:shadow-sm"
+                        href="#solicitar"
+                        data-service="<%= service.title %>"
+                      >
+                        Solicitar
+                        <span aria-hidden="true" class="text-base leading-none transition-transform group-hover:translate-x-0.5">→</span>
+                      </a>
+                    </article>
+                  <% }) %>
                 </div>
-                <a
-                  class="service-action mt-7 inline-flex items-center gap-2 self-start rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-bold text-ink transition-all hover:border-teal hover:text-teal hover:shadow-sm"
-                  href="#solicitar"
-                  data-service="<%= service.title %>"
-                >
-                  Solicitar
-                  <span aria-hidden="true" class="text-base leading-none transition-transform group-hover:translate-x-0.5">→</span>
-                </a>
-              </article>
+              </section>
             <% }) %>
           </div>
         </section>
