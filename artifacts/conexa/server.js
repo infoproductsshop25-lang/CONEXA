@@ -51,6 +51,18 @@ app.get("/politica-cookies", (_request, response) => {
   });
 });
 
+app.get("/sobre-conexa", (_request, response) => {
+  response.render("sobre-conexa", {
+    pageTitle: "Quiénes somos y cómo trabajamos — CONEXA",
+  });
+});
+
+app.get("/exito", (_request, response) => {
+  response.render("exito", {
+    pageTitle: "Pago completado con éxito — CONEXA",
+  });
+});
+
 app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
   console.log(`CONEXA running on port ${process.env.PORT || 3000}`);
 });
