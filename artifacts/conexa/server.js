@@ -18,6 +18,21 @@ app.get("/", (_request, response) => {
   });
 });
 
+app.get("/servicios/:slug", (request, response) => {
+  const service = services.find((item) => item.slug === request.params.slug);
+
+  if (!service) {
+    return response.status(404).render("not-found", {
+      pageTitle: "Servicio no encontrado — CONEXA",
+    });
+  }
+
+  return response.render("service", {
+    service,
+    pageTitle: `${service.title} — CONEXA`,
+  });
+});
+
 app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
   console.log(`CONEXA running on port ${process.env.PORT || 3000}`);
 });

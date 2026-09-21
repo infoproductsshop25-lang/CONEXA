@@ -156,8 +156,9 @@
                       </div>
                       <a
                         class="service-action mt-7 inline-flex items-center gap-2 self-start rounded-lg bg-gray-100 px-4 py-2.5 text-sm font-bold text-ink transition-all hover:bg-gray-200 hover:shadow-sm"
-                        href="#solicitar"
+                        href="/servicios/<%= service.slug %>"
                         data-service="<%= service.title %>"
+                        aria-label="Ver detalles de <%= service.title %>"
                       >
                         Solicitar
                         <span aria-hidden="true" class="text-base leading-none transition-transform group-hover:translate-x-0.5">→</span>
@@ -212,7 +213,39 @@
       document.querySelectorAll("[data-service]").forEach((button) => {
         button.addEventListener("click", () => {
           const subject = encodeURIComponent(`Quiero solicitar: ${button.dataset.service}`);
-          document.querySelector("#request-link").href = `mailto:hola@conexa.es?subject=${subject}`;
+          const requestLink = document.querySelector("#request-link");
+          if (requestLink) requestLink.href = `mailto:hola@conexa.es?subject=${subject}`;
+        });
+      });
+
+      document.querySelectorAll(".service-grid").forEach((slider) => {
+        let isDown = false;
+        let startX = 0;
+        let startScrollLeft = 0;
+
+        slider.addEventListener("mousedown", (event) => {
+          isDown = true;
+          slider.classList.add("is-dragging");
+          startX = event.pageX - slider.offsetLeft;
+          startScrollLeft = slider.scrollLeft;
+        });
+
+        slider.addEventListener("mouseleave", () => {
+          isDown = false;
+          slider.classList.remove("is-dragging");
+        });
+
+        slider.addEventListener("mouseup", () => {
+          isDown = false;
+          slider.classList.remove("is-dragging");
+        });
+
+        slider.addEventListener("mousemove", (event) => {
+          if (!isDown) return;
+          event.preventDefault();
+          const currentX = event.pageX - slider.offsetLeft;
+          const distance = (currentX - startX) * 1.15;
+          slider.scrollLeft = startScrollLeft - distance;
         });
       });
 

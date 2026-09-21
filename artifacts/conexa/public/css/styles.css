@@ -122,8 +122,14 @@ body {
   gap: 0.75rem;
   overflow-x: auto;
   padding: 0.15rem 0.15rem 0.5rem;
+  cursor: grab;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+}
+
+.service-grid.is-dragging {
+  cursor: grabbing;
+  user-select: none;
 }
 
 .service-grid::-webkit-scrollbar {
