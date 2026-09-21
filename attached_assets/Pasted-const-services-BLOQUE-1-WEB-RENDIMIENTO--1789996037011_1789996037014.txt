@@ -1,0 +1,135 @@
+const services = [
+  // ==========================================
+  // BLOQUE 1: WEB & RENDIMIENTO
+  // ==========================================
+  { 
+    id: 'web-low', 
+    title: 'Aceleración de Velocidad Web', 
+    price: 49, time: '24h', category: 'Web & Rendimiento', tier: 'Bajo',
+    slug: 'aceleracion-velocidad-web',
+    subtitle: 'Haz que tu web cargue en menos de 2 segundos.',
+    problem: 'Una web lenta mata tus ventas. Si tu cliente espera más de 3 segundos frente a una pantalla en blanco, se va a la competencia y Google te penaliza hundiéndote en las búsquedas.',
+    solution: [
+      'Compresión de imágenes en formatos de nueva generación (WebP) sin perder calidad.',
+      'Minificación de código (HTML, CSS, JS) para aligerar el peso de carga.',
+      'Configuración de sistema de caché avanzado para visitas recurrentes.'
+    ]
+  },
+  { 
+    id: 'web-mid', 
+    title: 'Plantilla de Presupuestos con Firma Digital', 
+    price: 69, time: '24h', category: 'Web & Rendimiento', tier: 'Medio',
+    slug: 'plantilla-presupuestos-firma-digital',
+    subtitle: 'Deja de perder horas montando PDFs a mano.',
+    problem: 'Imprimir, firmar, escanear y enviar... Cada paso extra que le pides a tu cliente es una fricción que enfría el trato y retrasa tu cobro.',
+    solution: [
+      'Documento interactivo alojado en la nube con tu identidad corporativa.',
+      'Campos dinámicos fáciles de actualizar para cada nuevo cliente.',
+      'Módulo de firma digital legal integrada (funciona en móvil y ordenador).'
+    ]
+  },
+  { 
+    id: 'web-high', 
+    title: 'Landing Page One-Page Exprés', 
+    price: 149, time: '48h', category: 'Web & Rendimiento', tier: 'Alto',
+    slug: 'landing-page-one-page-expres',
+    subtitle: 'Tu máquina de ventas online lista en 48 horas.',
+    problem: 'No necesitas una web institucional de 20 páginas que nadie lee. Necesitas un embudo directo y claro que convierta visitas curiosas en clientes reales hoy mismo.',
+    solution: [
+      'Diseño estratégico de una sola página (One-Page) enfocada 100% a la conversión.',
+      'Estructura de copywriting persuasivo: Problema, Solución, Testimonios y Cierre.',
+      'Integración directa con tu WhatsApp o formulario de captura de clientes.',
+      'Adaptación perfecta a dispositivos móviles (Responsive design).'
+    ]
+  },
+
+  // ==========================================
+  // BLOQUE 2: CAPTACIÓN & AUTOMATIZACIÓN
+  // ==========================================
+  { 
+    id: 'cap-low', 
+    title: 'Auditoría Google Maps / SEO Local', 
+    price: 49, time: '24h', category: 'Captación & Automatización', tier: 'Bajo',
+    slug: 'auditoria-google-maps-seo-local',
+    subtitle: 'Domina las búsquedas en tu ciudad.',
+    problem: 'Cuando alguien busca tus servicios en su barrio, aparece tu competencia. Estás perdiendo clientes que literalmente caminan por tu calle porque tu ficha no está optimizada.',
+    solution: [
+      'Revisión a fondo de tu ficha de Google Business Profile.',
+      'Corrección de NAP (Nombre, Dirección, Teléfono) y categorías principales.',
+      'Hoja de ruta estratégica para conseguir reseñas reales y sostenidas.',
+      'Listado de palabras clave locales con alto volumen de búsqueda.'
+    ]
+  },
+  { 
+    id: 'cap-mid', 
+    title: 'Secuencia de Bienvenida por Email', 
+    price: 89, time: '24h', category: 'Captación & Automatización', tier: 'Medio',
+    slug: 'secuencia-bienvenida-email',
+    subtitle: 'Convierte suscriptores en compradores en piloto automático.',
+    problem: 'Captas correos pero no sabes qué escribirles. Si solo envías publicidad directa y agresiva, la gente se desuscribe; si no envías nada, se olvidan de ti.',
+    solution: [
+      'Redacción estratégica de 3 correos persuasivos (Onboarding).',
+      'Email 1: Bienvenida, entrega de valor y conexión de marca.',
+      'Email 2: Autoridad, derribo de objeciones y caso de éxito.',
+      'Email 3: Oferta directa, escasez real y llamada a la acción clara.'
+    ]
+  },
+  { 
+    id: 'cap-high', 
+    title: 'Chatbot de Respuestas & Captura de Leads', 
+    price: 129, time: '48h', category: 'Captación & Automatización', tier: 'Alto',
+    slug: 'chatbot-respuestas-captura-leads',
+    subtitle: 'Atiende a tus clientes 24/7 sin estar pegado a la pantalla.',
+    problem: 'Los usuarios navegan de noche. Si tienen una duda a las 23:00h y nadie les responde al instante, cierran tu web y le escriben a la competencia. Pierdes ventas por no estar disponible.',
+    solution: [
+      'Instalación de un widget de chat automático en tu sitio web.',
+      'Configuración de flujos para responder las 5 dudas más frecuentes de tus clientes.',
+      'Módulo de captura de contacto (pide nombre y email antes de transferir a humano).',
+      'Notificación inmediata a tu correo cuando un cliente potencial necesita atención.'
+    ]
+  },
+
+  // ==========================================
+  // BLOQUE 3: MARCA & LEGAL
+  // ==========================================
+  { 
+    id: 'brand-low', 
+    title: 'Pase de Contacto Corporativo Wallet', 
+    price: 39, time: '24h', category: 'Marca & Legal', tier: 'Bajo',
+    slug: 'pase-contacto-corporativo-wallet-nfc',
+    subtitle: 'La tarjeta de visita que nadie tira a la basura.',
+    problem: 'Las tarjetas de papel se pierden a los 5 minutos. Gastas dinero en imprimir para que el cliente no encuentre tu número cuando realmente está listo para comprar.',
+    solution: [
+      'Diseño de pase digital corporativo nativo para Apple Wallet y Google Wallet.',
+      'Código QR en alta resolución para escanear en reuniones o poner en tu mostrador.',
+      'Archivo vCard integrado para guardado automático en la agenda del cliente.',
+      'Video-guía paso a paso sobre cómo vincularlo a pegatinas NFC por tu cuenta.'
+    ]
+  },
+  { 
+    id: 'brand-mid', 
+    title: 'Pack de Identidad Visual Exprés', 
+    price: 69, time: '48h', category: 'Marca & Legal', tier: 'Medio',
+    slug: 'pack-identidad-visual-expres',
+    subtitle: 'Deja de parecer un amateur y transmite autoridad.',
+    problem: 'Usas un color distinto en cada red social, tipografías aleatorias y un logotipo pixelado o mal recortado. Ese desorden visual destruye la confianza de tus clientes de alto valor.',
+    solution: [
+      'Brandboard de 1 página con tus códigos de color exactos (HEX/RGB) y fuentes oficiales.',
+      'Exportación de tu logotipo en formatos profesionales (PNG transparente, SVG vectorial).',
+      'Adaptación de portadas y avatares (sin cortes) para 3 redes sociales clave.'
+    ]
+  },
+  { 
+    id: 'brand-high', 
+    title: 'Adaptación Legal Web + RGPD', 
+    price: 119, time: '24h', category: 'Marca & Legal', tier: 'Alto',
+    slug: 'adaptacion-legal-web-rgpd',
+    subtitle: 'Blindaje legal anti-multas para tu negocio.',
+    problem: 'Copiar y pegar los textos legales de otra página te deja desprotegido. Si recoges emails, tienes un formulario de contacto o usas cookies sin el aviso correcto, te expones a sanciones de miles de euros.',
+    solution: [
+      'Redacción personalizada de Aviso Legal, Política de Privacidad y Política de Cookies.',
+      'Configuración e instalación del banner de aceptación de cookies por niveles (obligatorio).',
+      'Inyección de la primera capa informativa (checkbox legal) en tus formularios de contacto.'
+    ]
+  }
+];
