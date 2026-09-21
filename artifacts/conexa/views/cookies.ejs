@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Política de Cookies de Soluciones Conexa (CONEXA)."
+    />
+    <meta name="theme-color" content="#0b1f33" />
+    <title><%= pageTitle %></title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#0b1f33",
+              teal: "#15b8a6",
+              mist: "#f4f8f8",
+              coral: "#ff735c",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-mist text-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+        <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
+          <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="font-display text-xl font-bold tracking-[-0.06em]">CONEXA</span>
+        </a>
+        <a href="/#servicios" class="inline-flex items-center gap-2 text-sm font-semibold text-ink/60 transition-colors hover:text-ink">
+          <span aria-hidden="true">←</span> Volver al catálogo
+        </a>
+      </nav>
+    </header>
+
+    <main class="legal-content mx-auto max-w-3xl px-6 py-14 lg:px-10 lg:py-24">
+      <p class="eyebrow text-teal">Información legal</p>
+      <h1>Política de Cookies</h1>
+      <p class="legal-intro">Esta política explica qué cookies utiliza CONEXA y para qué se emplean.</p>
+
+      <h2>1. Qué son las cookies</h2>
+      <p>Las cookies son pequeños archivos que un sitio web puede guardar en el dispositivo de una persona para permitir su funcionamiento, recordar determinadas preferencias o facilitar la seguridad.</p>
+
+      <h2>2. Cookies que utiliza CONEXA</h2>
+      <p>CONEXA solo utiliza cookies técnicas estrictamente necesarias para prestar el servicio, mantener la seguridad y permitir el funcionamiento de las herramientas integradas.</p>
+      <p>Cuando se utilizan sus servicios, pueden existir cookies técnicas inyectadas por proveedores como <strong>Stripe</strong>, para la seguridad y el procesamiento de pagos, y <strong>Vercel</strong>, para la seguridad y el funcionamiento de la infraestructura.</p>
+
+      <h2>3. Cookies de marketing</h2>
+      <p><strong>Actualmente no utilizamos cookies de terceros para marketing, publicidad comportamental ni elaboración de perfiles.</strong> Si esta situación cambia, actualizaremos esta política y solicitaremos el consentimiento que corresponda antes de instalar cookies no esenciales.</p>
+
+      <h2>4. Cómo gestionar las cookies</h2>
+      <p>Puedes configurar tu navegador para bloquear o eliminar cookies. Ten en cuenta que, si bloqueas las cookies técnicas estrictamente necesarias, algunas funciones del sitio o del proceso de pago podrían no funcionar correctamente.</p>
+
+      <h2>5. Contacto</h2>
+      <p>Si tienes preguntas sobre el uso de cookies en CONEXA, puedes escribir a <a href="mailto:soluciones.conexa@gmail.com">soluciones.conexa@gmail.com</a>.</p>
+    </main>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>

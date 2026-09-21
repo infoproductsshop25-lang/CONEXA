@@ -1,0 +1,28 @@
+Actúa como un desarrollador Full-Stack experto. Necesito integrar los textos legales de mi negocio (CONEXA) en el proyecto y enlazarlos en el pie de página (footer). 
+
+Por favor, ejecuta los siguientes 3 pasos basándote en la estructura actual:
+
+1. AÑADIR RUTAS EN EL SERVIDOR (server.js):
+Crea tres nuevas rutas GET estáticas antes de la ruta de captura de errores (404):
+- app.get('/politica-privacidad', (req, res) => { res.render('privacidad'); });
+- app.get('/terminos-condiciones', (req, res) => { res.render('terminos'); });
+- app.get('/politica-cookies', (req, res) => { res.render('cookies'); });
+
+2. CREAR LAS VISTAS LEGALES (Carpeta views/):
+Crea tres archivos nuevos (`privacidad.ejs`, `terminos.ejs`, `cookies.ejs`).
+Deben tener la misma estructura base que el resto de la web (incluyendo el Header y el Footer), y un contenedor central principal (ej. `<main class="container mx-auto px-4 py-12 max-w-3xl prose">`) para que el texto sea legible.
+
+- Para `privacidad.ejs`, inyecta un H1 "Política de Privacidad" y estructura el contenido basado en la protección de datos estándar, indicando que el responsable es Soluciones Conexa (CONEXA), email: soluciones.conexa@gmail.com, y que los pagos los procesa Stripe.
+- Para `terminos.ejs`, inyecta un H1 "Términos y Condiciones de Contratación". Destaca en negrita que las entregas son en 24-48h a partir de la entrega de material por parte del cliente, que no hay derecho de desistimiento una vez iniciado el trabajo, y que incluye 1 ronda de revisiones.
+- Para `cookies.ejs`, inyecta un H1 "Política de Cookies". Explica que CONEXA solo usa cookies técnicas estrictamente necesarias (ej. las inyectadas por Stripe y Vercel para seguridad y procesar pagos) y que actualmente no se usan cookies de terceros para marketing.
+
+3. ACTUALIZAR EL FOOTER:
+Localiza el código del footer en todas las vistas principales (ej. `index.ejs`, `service.ejs`). Añade una nueva sección de enlaces legales en la parte inferior del footer con un diseño sutil (texto pequeño y de color gris claro). 
+Debe verse similar a esto:
+<div class="flex justify-center gap-4 text-xs text-gray-500 mt-8 border-t pt-4">
+  <a href="/politica-privacidad" class="hover:text-gray-900">Política de Privacidad</a>
+  <a href="/terminos-condiciones" class="hover:text-gray-900">Términos y Condiciones</a>
+  <a href="/politica-cookies" class="hover:text-gray-900">Política de Cookies</a>
+</div>
+
+Aplica los cambios, asegúrate de que los enlaces funcionan y reinicia el servidor.

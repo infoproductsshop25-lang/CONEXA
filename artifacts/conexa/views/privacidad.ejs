@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Política de Privacidad de Soluciones Conexa (CONEXA)."
+    />
+    <meta name="theme-color" content="#0b1f33" />
+    <title><%= pageTitle %></title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#0b1f33",
+              teal: "#15b8a6",
+              mist: "#f4f8f8",
+              coral: "#ff735c",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-mist text-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+        <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
+          <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="font-display text-xl font-bold tracking-[-0.06em]">CONEXA</span>
+        </a>
+        <a href="/#servicios" class="inline-flex items-center gap-2 text-sm font-semibold text-ink/60 transition-colors hover:text-ink">
+          <span aria-hidden="true">←</span> Volver al catálogo
+        </a>
+      </nav>
+    </header>
+
+    <main class="legal-content mx-auto max-w-3xl px-6 py-14 lg:px-10 lg:py-24">
+      <p class="eyebrow text-teal">Información legal</p>
+      <h1>Política de Privacidad</h1>
+      <p class="legal-intro">En CONEXA nos comprometemos a tratar tus datos de forma clara, segura y respetuosa.</p>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <p>El responsable del tratamiento de los datos personales es <strong>Soluciones Conexa (CONEXA)</strong>.</p>
+      <p>Para cualquier consulta relacionada con privacidad puedes escribir a <a href="mailto:soluciones.conexa@gmail.com">soluciones.conexa@gmail.com</a>.</p>
+
+      <h2>2. Qué datos podemos tratar</h2>
+      <p>Podemos tratar los datos que nos facilites al contactar con nosotros o solicitar un servicio, como tu nombre, dirección de correo electrónico, datos de contacto, información necesaria para ejecutar el encargo y los datos de facturación o pago.</p>
+
+      <h2>3. Para qué utilizamos tus datos</h2>
+      <ul>
+        <li>Responder a tus consultas y preparar la prestación del servicio solicitado.</li>
+        <li>Gestionar la contratación, el pago y la entrega de los materiales acordados.</li>
+        <li>Atender obligaciones legales, fiscales y de seguridad.</li>
+        <li>Mejorar la atención y el funcionamiento de nuestros servicios.</li>
+      </ul>
+
+      <h2>4. Pagos y proveedores</h2>
+      <p>Los pagos se procesan a través de <strong>Stripe</strong>. CONEXA no almacena los datos completos de tu tarjeta; Stripe trata la información de pago conforme a sus propias políticas y medidas de seguridad.</p>
+      <p>Podemos utilizar proveedores tecnológicos que actúan siguiendo nuestras instrucciones y que solo acceden a los datos necesarios para prestar sus servicios.</p>
+
+      <h2>5. Base legal y conservación</h2>
+      <p>La base legal puede ser la ejecución de un contrato, el consentimiento de la persona interesada o el cumplimiento de obligaciones legales, según el caso. Conservaremos los datos durante el tiempo necesario para gestionar la relación y, después, durante los plazos legalmente exigibles.</p>
+
+      <h2>6. Tus derechos</h2>
+      <p>Puedes solicitar el acceso, la rectificación, la supresión, la limitación u oposición al tratamiento de tus datos, así como la portabilidad cuando corresponda. Para ejercer tus derechos, escribe a <a href="mailto:soluciones.conexa@gmail.com">soluciones.conexa@gmail.com</a> indicando tu solicitud.</p>
+      <p>También puedes presentar una reclamación ante la Agencia Española de Protección de Datos si consideras que el tratamiento no se ajusta a la normativa aplicable.</p>
+    </main>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>

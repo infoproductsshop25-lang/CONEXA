@@ -33,6 +33,24 @@ app.get("/servicios/:slug", (request, response) => {
   });
 });
 
+app.get("/politica-privacidad", (_request, response) => {
+  response.render("privacidad", {
+    pageTitle: "Política de Privacidad — CONEXA",
+  });
+});
+
+app.get("/terminos-condiciones", (_request, response) => {
+  response.render("terminos", {
+    pageTitle: "Términos y Condiciones de Contratación — CONEXA",
+  });
+});
+
+app.get("/politica-cookies", (_request, response) => {
+  response.render("cookies", {
+    pageTitle: "Política de Cookies — CONEXA",
+  });
+});
+
 app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
   console.log(`CONEXA running on port ${process.env.PORT || 3000}`);
 });

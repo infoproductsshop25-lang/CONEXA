@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Términos y Condiciones de Contratación de los servicios de CONEXA."
+    />
+    <meta name="theme-color" content="#0b1f33" />
+    <title><%= pageTitle %></title>
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#0b1f33",
+              teal: "#15b8a6",
+              mist: "#f4f8f8",
+              coral: "#ff735c",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="bg-mist text-ink antialiased">
+    <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+        <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
+          <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="font-display text-xl font-bold tracking-[-0.06em]">CONEXA</span>
+        </a>
+        <a href="/#servicios" class="inline-flex items-center gap-2 text-sm font-semibold text-ink/60 transition-colors hover:text-ink">
+          <span aria-hidden="true">←</span> Volver al catálogo
+        </a>
+      </nav>
+    </header>
+
+    <main class="legal-content mx-auto max-w-3xl px-6 py-14 lg:px-10 lg:py-24">
+      <p class="eyebrow text-teal">Información legal</p>
+      <h1>Términos y Condiciones de Contratación</h1>
+      <p class="legal-intro">Estas condiciones regulan la contratación de los servicios digitales exprés ofrecidos por CONEXA.</p>
+
+      <h2>1. Objeto del servicio</h2>
+      <p>CONEXA presta servicios digitales definidos en cada ficha del catálogo. El alcance concreto de cada encargo será el indicado en la descripción del servicio y en la información confirmada con el cliente antes de comenzar.</p>
+
+      <h2>2. Contratación y pago</h2>
+      <p>La contratación se formaliza cuando el cliente acepta el alcance, facilita la información necesaria y realiza el pago correspondiente. Los pagos se procesan mediante Stripe y pueden estar sujetos a sus condiciones de uso.</p>
+
+      <h2>3. Plazos de entrega</h2>
+      <p><strong>Las entregas se realizan en un plazo estimado de 24-48 horas a partir de la entrega de todo el material y la información necesarios por parte del cliente.</strong> El plazo puede suspenderse si faltan datos, accesos, aprobaciones o materiales imprescindibles para ejecutar el trabajo.</p>
+
+      <h2>4. Revisiones</h2>
+      <p>Cada servicio incluye <strong>1 ronda de revisiones</strong> sobre el alcance inicialmente contratado. Las peticiones que amplíen el alcance, incorporen nuevas funcionalidades o cambien sustancialmente la dirección del trabajo podrán presupuestarse aparte.</p>
+
+      <h2>5. Desistimiento y cancelación</h2>
+      <p><strong>No hay derecho de desistimiento una vez iniciado el trabajo</strong>, al tratarse de servicios personalizados y ejecutados bajo las indicaciones del cliente. Si el trabajo todavía no ha comenzado, cualquier cancelación se revisará según el estado del encargo y los costes ya incurridos.</p>
+
+      <h2>6. Obligaciones del cliente</h2>
+      <p>El cliente debe aportar información veraz, materiales de los que tenga derechos de uso y las respuestas necesarias para que el servicio pueda ejecutarse. El cliente es responsable de revisar y aprobar el resultado, así como de garantizar que los contenidos que facilite cumplen la normativa aplicable.</p>
+
+      <h2>7. Propiedad y responsabilidad</h2>
+      <p>Una vez abonado el servicio, el cliente podrá utilizar los entregables conforme al alcance contratado. CONEXA no será responsable de retrasos o daños derivados de información incorrecta, falta de colaboración, servicios de terceros o usos distintos de los acordados.</p>
+
+      <h2>8. Contacto</h2>
+      <p>Para cualquier consulta sobre estas condiciones puedes escribir a <a href="mailto:soluciones.conexa@gmail.com">soluciones.conexa@gmail.com</a>.</p>
+    </main>
+
+    <%- include("partials/footer") %>
+  </body>
+</html>
