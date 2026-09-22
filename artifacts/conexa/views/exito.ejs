@@ -7,7 +7,7 @@
       name="description"
       content="Confirmación de pago de CONEXA y próximos pasos para comenzar tu servicio digital."
     />
-    <meta name="theme-color" content="#0b1f33" />
+    <meta name="theme-color" content="#020617" />
     <title><%= pageTitle %></title>
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,10 +20,10 @@
               display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             colors: {
-              ink: "#0b1f33",
-              teal: "#15b8a6",
-              mist: "#f4f8f8",
-              coral: "#ff735c",
+              ink: "#020617",
+              teal: "#84cc16",
+              mist: "#f8fafc",
+              coral: "#0f172a",
             },
           },
         },
@@ -37,13 +37,12 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body class="bg-mist text-ink antialiased">
+  <body class="bg-mist text-slate-950 antialiased">
     <div class="min-h-screen overflow-hidden">
       <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
           <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
-            <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-            <span class="font-display text-xl font-bold tracking-[-0.06em]">CONEXA</span>
+          <img src="/images/logo-conexa.jpg" alt="CONEXA Logo" class="h-8 md:h-10 w-auto mix-blend-multiply" />
           </a>
           <a href="/#servicios" class="inline-flex items-center gap-2 text-sm font-semibold text-ink/60 transition-colors hover:text-ink">
             Volver al catálogo <span aria-hidden="true">↗</span>
@@ -53,16 +52,16 @@
 
       <main class="success-shell mx-auto max-w-3xl px-6 py-16 lg:px-10 lg:py-24">
         <div class="success-check" role="img" aria-label="Pago confirmado">✓</div>
-        <p class="eyebrow mt-8 text-teal">Pedido confirmado</p>
-        <h1 class="mt-4 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.07em] sm:text-7xl">
-          ¡Pago completado con éxito!<br /><span class="text-teal">Bienvenido a CONEXA.</span>
+        <p class="eyebrow mt-8 text-lime-500">Pedido confirmado</p>
+        <h1 class="mt-4 font-display text-5xl font-extrabold leading-[0.98] tracking-[-0.07em] text-slate-950 sm:text-7xl">
+          ¡Pago completado con éxito!<br /><span class="text-lime-500">Bienvenido a CONEXA.</span>
         </h1>
         <p class="success-message mt-8">
           Ya hemos recibido tu pedido. Al ser uno de nuestros primeros clientes, vas a tener un trato 100% personalizado y directo.
         </p>
 
         <section class="mt-12 border-t border-ink/10 pt-10">
-          <p class="eyebrow text-coral">Próximos pasos</p>
+          <p class="eyebrow text-lime-500">Próximos pasos</p>
           <ol class="mt-6 grid gap-4">
             <li class="success-step">
               <span>01</span>
@@ -79,7 +78,7 @@
           </ol>
         </section>
 
-        <a href="/#servicios" class="mt-12 inline-flex items-center gap-3 rounded-full bg-ink px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-ink/10 transition-transform hover:-translate-y-1">
+        <a href="/#servicios" class="mt-12 inline-flex items-center gap-3 rounded-full bg-lime-400 px-6 py-3.5 text-sm font-bold text-slate-950 shadow-lg shadow-lime-400/20 transition-all hover:-translate-y-1 hover:bg-lime-500">
           Volver al catálogo <span aria-hidden="true">↗</span>
         </a>
       </main>

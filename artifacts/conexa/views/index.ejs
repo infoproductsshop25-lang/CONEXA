@@ -7,7 +7,7 @@
       name="description"
       content="Soluciones digitales claras, rápidas y listas para usar. Servicios exprés de CONEXA desde 39€."
     />
-    <meta name="theme-color" content="#0b1f33" />
+    <meta name="theme-color" content="#020617" />
     <title><%= pageTitle %></title>
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,10 +20,10 @@
               display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
             },
             colors: {
-              ink: "#0b1f33",
-              teal: "#15b8a6",
-              mist: "#f4f8f8",
-              coral: "#ff735c",
+              ink: "#020617",
+              teal: "#84cc16",
+              mist: "#f8fafc",
+              coral: "#0f172a",
             },
           },
         },
@@ -37,15 +37,12 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body class="bg-mist text-ink antialiased">
+      <body class="bg-mist text-slate-950 antialiased">
     <div class="min-h-screen overflow-hidden">
       <header class="sticky top-0 z-50 border-b border-ink/5 bg-mist/90 backdrop-blur-md">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 lg:px-10">
           <a href="/" class="group inline-flex items-center gap-3" aria-label="CONEXA, inicio">
-            <span class="logo-mark" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </span>
-            <span class="font-display text-xl font-bold tracking-[-0.06em]">CONEXA</span>
+            <img src="/images/logo-conexa.jpg" alt="CONEXA Logo" class="h-8 md:h-10 w-auto mix-blend-multiply" />
           </a>
           <div class="hidden items-center gap-8 text-sm font-semibold text-ink/65 md:flex">
             <a class="transition-colors hover:text-ink" href="#servicios">Servicios</a>
@@ -54,7 +51,7 @@
           </div>
           <a
             href="#servicios"
-            class="rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-ink/10 transition-transform hover:-translate-y-0.5"
+            class="rounded-full bg-lime-400 px-5 py-3 text-sm font-bold text-slate-950 shadow-lg shadow-lime-400/20 transition-all hover:-translate-y-0.5 hover:bg-lime-500"
           >
             Ver soluciones
           </a>
@@ -65,13 +62,13 @@
         <section class="hero-orb relative mx-auto max-w-7xl px-6 pb-20 pt-10 lg:px-10 lg:pb-28 lg:pt-20">
           <div class="grid items-end gap-12 lg:grid-cols-[1fr_0.72fr]">
             <div class="reveal max-w-3xl">
-              <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-teal/20 bg-white/70 px-3.5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-teal">
-                <span class="h-2 w-2 rounded-full bg-teal"></span>
+              <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-lime-500/20 bg-white/70 px-3.5 py-2 text-xs font-bold uppercase tracking-[0.18em] text-lime-500">
+                <span class="h-2 w-2 rounded-full bg-lime-500"></span>
                 Soluciones listas para activar
               </p>
-              <h1 class="font-display text-5xl font-semibold leading-[0.96] tracking-[-0.07em] text-ink sm:text-7xl lg:text-[6.9rem]">
+              <h1 class="font-display text-5xl font-extrabold leading-[0.96] tracking-[-0.07em] text-slate-950 sm:text-7xl lg:text-[6.9rem]">
                 Tu siguiente<br />
-                <span class="text-teal">avance digital.</span>
+                <span class="text-lime-500">avance digital.</span>
               </h1>
               <p class="mt-8 max-w-xl text-lg leading-8 text-ink/60 sm:text-xl">
                 Servicios digitales concretos, sin rodeos y con entregas en 24–48h. Elige lo que necesitas y vuelve a avanzar.
@@ -79,7 +76,7 @@
               <div class="mt-9 flex flex-wrap items-center gap-4">
                 <a
                   href="#servicios"
-                  class="inline-flex items-center gap-3 rounded-full bg-teal px-6 py-3.5 text-sm font-bold text-ink transition-all hover:-translate-y-1 hover:bg-[#23cdbb]"
+                  class="inline-flex items-center gap-3 rounded-full bg-lime-400 px-6 py-3.5 text-sm font-bold text-slate-950 transition-all hover:-translate-y-1 hover:bg-lime-500"
                 >
                   Explorar servicios
                   <span aria-hidden="true">↘</span>
@@ -94,8 +91,8 @@
                   <span>2026</span>
                 </div>
                 <div class="mt-20">
-                  <div class="mb-4 flex items-center gap-2 text-sm font-semibold text-teal">
-                    <span class="h-2 w-2 rounded-full bg-teal"></span>
+                  <div class="mb-4 flex items-center gap-2 text-sm font-semibold text-lime-500">
+                    <span class="h-2 w-2 rounded-full bg-lime-500"></span>
                     Disponible ahora
                   </div>
                   <p class="font-display text-3xl font-semibold leading-tight tracking-[-0.05em] text-ink">
@@ -104,7 +101,7 @@
                 </div>
                 <div class="mt-8 flex items-end justify-between">
                   <span class="text-sm font-medium leading-5 text-ink/50">Soluciones<br />que mueven.</span>
-                  <span class="font-display text-7xl font-bold leading-none tracking-[-0.1em] text-coral">+</span>
+                    <span class="font-display text-7xl font-bold leading-none tracking-[-0.1em] text-lime-500">+</span>
                 </div>
               </div>
             </div>
@@ -119,8 +116,8 @@
         <section id="servicios" class="mx-auto max-w-7xl scroll-mt-24 px-6 pb-24 lg:px-10">
           <div class="mb-10 flex flex-col justify-between gap-5 border-t border-ink/10 pt-6 sm:flex-row sm:items-end">
             <div>
-              <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-teal">Catálogo exprés</p>
-              <h2 class="font-display text-3xl font-semibold tracking-[-0.055em] sm:text-4xl">Elige tu próximo paso.</h2>
+              <p class="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-lime-500">Catálogo exprés</p>
+              <h2 class="font-display text-3xl font-extrabold tracking-[-0.055em] text-slate-950 sm:text-4xl">Elige tu próximo paso.</h2>
             </div>
             <p class="max-w-xs text-sm leading-6 text-ink/50">Soluciones pensadas para resolver una necesidad real, hoy.</p>
           </div>
@@ -130,10 +127,10 @@
               <section class="catalog-section <%= section.style %>">
                 <div class="catalog-section__header">
                   <div class="flex items-center gap-3">
-                    <span class="section-number"><%= section.number %></span>
+                    <span class="section-number bg-slate-950"><%= section.number %></span>
                     <div>
                       <p class="text-xs font-bold uppercase tracking-[0.18em] text-ink/45">Bloque <%= section.number %></p>
-                      <h3 class="mt-1 font-display text-2xl font-semibold tracking-[-0.055em] text-ink sm:text-3xl"><%= section.title %></h3>
+                      <h3 class="mt-1 font-display text-2xl font-extrabold tracking-[-0.055em] text-slate-950 sm:text-3xl"><%= section.title %></h3>
                     </div>
                   </div>
                   <span class="hidden text-xs font-semibold uppercase tracking-[0.15em] text-ink/35 sm:block">3 soluciones</span>
@@ -144,7 +141,7 @@
                       <div class="flex items-start justify-end">
                         <span class="tier-dot tier-<%= service.tier.toLowerCase() %>" title="Nivel <%= service.tier %>" aria-label="Nivel <%= service.tier %>"></span>
                       </div>
-                      <h4 class="mt-4 max-w-xs font-display text-xl font-semibold leading-[1.1] tracking-[-0.05em] text-ink sm:text-2xl"><%= service.title %></h4>
+                      <h4 class="mt-4 max-w-xs font-display text-xl font-extrabold leading-[1.1] tracking-[-0.05em] text-slate-950 sm:text-2xl"><%= service.title %></h4>
                       <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-gray-500">
                         <svg aria-hidden="true" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <circle cx="12" cy="12" r="9"></circle>
@@ -172,11 +169,11 @@
           </div>
         </section>
 
-        <section id="como-funciona" class="border-y border-ink/10 bg-white/60">
+         <section id="como-funciona" class="border-y border-ink/10 bg-white/60">
           <div class="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[0.7fr_1fr] lg:px-10 lg:py-24">
             <div>
-              <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-coral">Así de fácil</p>
-              <h2 class="font-display text-4xl font-semibold leading-[1] tracking-[-0.06em] sm:text-5xl">De idea a listo,<br /><span class="text-teal">sin escalas.</span></h2>
+              <p class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-lime-500">Así de fácil</p>
+              <h2 class="font-display text-4xl font-extrabold leading-[1] tracking-[-0.06em] text-slate-950 sm:text-5xl">De idea a listo,<br /><span class="text-lime-500">sin escalas.</span></h2>
             </div>
             <div class="grid gap-8 sm:grid-cols-3">
               <div class="process-step"><span>01</span><h3>Elige</h3><p>Selecciona la solución que encaja con tu momento.</p></div>
@@ -187,12 +184,12 @@
         </section>
 
         <section id="solicitar" class="mx-auto max-w-7xl scroll-mt-8 px-6 py-20 lg:px-10 lg:py-28">
-          <div class="request-panel relative overflow-hidden rounded-3xl bg-ink px-7 py-10 text-white sm:px-12 sm:py-14 lg:px-16">
+           <div class="request-panel relative overflow-hidden rounded-3xl bg-slate-950 px-7 py-10 text-white sm:px-12 sm:py-14 lg:px-16">
             <div class="relative z-10 max-w-2xl">
-              <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-teal">¿Listo para empezar?</p>
-              <h2 class="font-display text-4xl font-semibold leading-none tracking-[-0.065em] sm:text-6xl">Hagamos que avance.</h2>
+              <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-lime-500">¿Listo para empezar?</p>
+              <h2 class="font-display text-4xl font-extrabold leading-none tracking-[-0.065em] sm:text-6xl">Hagamos que avance.</h2>
               <p class="mt-5 max-w-lg text-base leading-7 text-white/60">Selecciona un servicio arriba y escríbenos. Te responderemos con los siguientes pasos.</p>
-              <a id="request-link" href="mailto:hola@conexa.es?subject=Quiero%20avanzar%20con%20CONEXA" class="mt-8 inline-flex items-center gap-3 rounded-full bg-teal px-6 py-3.5 text-sm font-bold text-ink transition-transform hover:-translate-y-1">
+              <a id="request-link" href="mailto:hola@conexa.es?subject=Quiero%20avanzar%20con%20CONEXA" class="mt-8 inline-flex items-center gap-3 rounded-full bg-lime-400 px-6 py-3.5 text-sm font-bold text-slate-950 transition-all hover:-translate-y-1 hover:bg-lime-500">
                 Solicitar un servicio <span aria-hidden="true">↗</span>
               </a>
             </div>

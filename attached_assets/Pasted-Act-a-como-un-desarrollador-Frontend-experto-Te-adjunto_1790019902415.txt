@@ -1,0 +1,17 @@
+Actúa como un desarrollador Frontend experto. Te adjunto el nuevo logotipo oficial de CONEXA (logo.jpg). Necesito que lo integres en la plataforma y actualices la paleta de colores global de Tailwind CSS para que coincida exactamente con esta nueva identidad visual: Verde Lima (isotipo) y Azul Medianoche (texto).
+
+Basándote en la interfaz actual de mi proyecto (referencia 'app 2'), ejecuta los siguientes pasos:
+
+1. INTEGRACIÓN DEL LOGOTIPO:
+- Guarda la imagen adjunta en tu directorio estático como `public/images/logo-conexa.jpg`.
+- Localiza la barra de navegación (Header) en las vistas principales.
+- Reemplaza el logotipo provisional anterior (el texto y los iconos turquesa/salmón) por una etiqueta `<img>` que cargue el nuevo logo. 
+- Usa estas clases para ajustar el tamaño y fundir el fondo blanco del JPG con la web: `<img src="/images/logo-conexa.jpg" alt="CONEXA Logo" class="h-8 md:h-10 w-auto mix-blend-multiply">`.
+
+2. ACTUALIZACIÓN DE LA PALETA DE COLORES (Tailwind CSS):
+- SECCIONES OSCURAS (Ej. El bloque Hero superior de "Hagamos que avance"): Asegúrate de que el fondo sea un azul medianoche muy oscuro que coincida con el texto del logo, usando la clase `bg-slate-950`.
+- BOTONES PRINCIPALES: Cambia el color de fondo de todos los botones principales ("Solicitar un servicio", "Explorar servicios") al nuevo verde lima usando `bg-lime-400` y un hover `hover:bg-lime-500`. Para mantener la legibilidad y el contraste, el texto interior de estos botones debe ser oscuro: `text-slate-950 font-bold`.
+- ACENTOS Y DETALLES (Tarjetas de catálogo): Localiza los puntos decorativos de colores y los iconos pequeños en las tarjetas de los 9 servicios. Cambia su color a `text-lime-500` o `bg-lime-500` para eliminar cualquier rastro de los colores pastel antiguos.
+- TIPOGRAFÍA: Los titulares grandes (H1, H2) y los títulos de los servicios que estén sobre fondos blancos o claros deben usar el azul oscuro corporativo. Aplica `text-slate-950 font-extrabold`.
+
+Aplica todos los cambios en las vistas, revisa que los botones contrasten bien con su nuevo color verde y reinicia el servidor.
