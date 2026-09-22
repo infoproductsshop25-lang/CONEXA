@@ -10,6 +10,7 @@ const services = [
     category: "Web & Rendimiento",
     tier: "Bajo",
     slug: "aceleracion-velocidad-web",
+    stripeUrl: "https://buy.stripe.com/3cI6oJ2qNg8C179bvK0gw0d",
     subtitle: "Haz que tu web cargue en menos de 2 segundos y retén a tus clientes.",
     problem:
       "Una web lenta destruye tus conversiones. Si un cliente espera más de 3 segundos frente a una pantalla en blanco en su teléfono, se va con la competencia y Google hunde tu posición.",
@@ -27,6 +28,7 @@ const services = [
     category: "Web & Rendimiento",
     tier: "Medio",
     slug: "terminal-virtual-cobro-in-situ",
+    stripeUrl: "https://buy.stripe.com/28E28taXj8Ga8zB0R60gw0e",
     subtitle: "Cobra al instante desde tu móvil con tarjeta o Bizum sin pagar cuotas fijas de datáfono.",
     problem:
       "Tener que esperar a transferencias bancarias lentas o depender de datáfonos físicos con cuotas de mantenimiento mensual hace que pierdas cobros in situ tras terminar una reparación o servicio.",
@@ -45,6 +47,7 @@ const services = [
     category: "Web & Rendimiento",
     tier: "Alto",
     slug: "landing-page-one-page-expres",
+    stripeUrl: "https://buy.stripe.com/5kQ7sN4yVe0u7vx6bq0gw0f",
     subtitle: "Tu máquina de captación online lista para facturar en 48 horas.",
     problem:
       "Las páginas tradicionales con 10 pestañas aburridas no convierten. Necesitas un embudo directo de una sola página que dirija la atención hacia la llamada o el mensaje de WhatsApp.",
@@ -67,6 +70,7 @@ const services = [
     category: "Captación & Automatización",
     tier: "Bajo",
     slug: "auditoria-google-maps-seo-local",
+    stripeUrl: "https://buy.stripe.com/7sYcN7d5r1dI9DF8jy0gw0g",
     subtitle: "Aparece en los primeros resultados de búsqueda cuando busquen tu servicio en tu ciudad.",
     problem:
       "Cuando un cliente busca en Google un profesional cerca de su ubicación, encuentra a tu competencia. Tu ficha de Maps no está optimizada y estás regalando clientes de tu propio barrio.",
@@ -85,6 +89,7 @@ const services = [
     category: "Captación & Automatización",
     tier: "Medio",
     slug: "sistema-email-automation",
+    stripeUrl: "https://buy.stripe.com/5kQ4gB2qN1dI03557m0gw0h",
     subtitle: "Convierte contactos fríos en compradores recurrentes en piloto automático.",
     problem:
       "Capturar correos o teléfonos no sirve de nada si no mantienes el contacto. Si solo mandas promociones frías o no envías nada tras una compra, el cliente se olvida de ti y no vuelve.",
@@ -102,6 +107,7 @@ const services = [
     category: "Captación & Automatización",
     tier: "Alto",
     slug: "chatbot-respuestas-captura-leads",
+    stripeUrl: "https://buy.stripe.com/aFa14pd5rg8C179bvK0gw0i",
     subtitle: "Atiende clientes las 24 horas del día y recoge presupuestos mientras duermes.",
     problem:
       "Muchos clientes buscan servicios por la tarde o en fin de semana. Si no reciben una respuesta inmediata a sus dudas básicas, cierran tu web y le escriben al siguiente negocio.",
@@ -124,6 +130,7 @@ const services = [
     category: "Marca & Legal",
     tier: "Bajo",
     slug: "pack-identidad-visual-expres",
+    stripeUrl: "https://buy.stripe.com/00wfZjc1n5tYcPRdDS0gw0j",
     subtitle: "Unifica tu imagen de marca y transmite la solidez de una empresa consolidada.",
     problem:
       "Usar colores diferentes en cada red social, fuentes descuadradas y un logo pixelado o con fondo blanco destruye la credibilidad que necesitas para cobrar tarifas profesionales.",
@@ -141,6 +148,7 @@ const services = [
     category: "Marca & Legal",
     tier: "Medio",
     slug: "adaptacion-legal-web-rgpd",
+    stripeUrl: "https://buy.stripe.com/5kQ9AVd5r7C62bd43i0gw0k",
     subtitle: "Protege tu negocio frente a multas de protección de datos con textos en regla.",
     problem:
       "Copiar avisos legales de otras páginas o no contar con un banner de cookies real deja a tu empresa expuesta a inspecciones y sanciones graves de la Agencia Española de Protección de Datos.",
@@ -158,6 +166,7 @@ const services = [
     category: "Marca & Legal",
     tier: "Alto",
     slug: "auditoria-blindaje-marca-oepm",
+    stripeUrl: "https://buy.stripe.com/8x2cN78PbbSmaHJeHW0gw0l",
     subtitle: "Protege el nombre de tu empresa en España antes de que te lo quiten o te demanden.",
     problem:
       "Tener un dominio web o una sociedad no te da la propiedad sobre tu nombre comercial. Si un tercero registra tu marca en la OEPM, puede obligarte a cerrar tu web, retirar rótulos y pagar indemnizaciones.",
