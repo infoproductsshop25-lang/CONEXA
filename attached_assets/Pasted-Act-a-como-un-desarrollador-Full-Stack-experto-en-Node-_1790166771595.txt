@@ -1,0 +1,61 @@
+Actúa como un desarrollador Full-Stack experto en Node.js, Express y ciberseguridad web. Necesito blindar técnicamente el servidor de mi plataforma CONEXA ('server.js') implementando la seguridad indispensable a nivel de cabeceras HTTP, control de tráfico y rate limiting, sin romper Stripe ni los estilos externos.
+
+Por favor, ejecuta los siguientes pasos:
+
+1. INSTALACIÓN DE DEPENDENCIAS DE SEGURIDAD:
+Instala los dos paquetes npm oficiales de seguridad esenciales ejecutando en el entorno:
+npm install helmet express-rate-limit
+
+2. CONFIGURACIÓN EN 'server.js':
+Abre 'server.js' e implementa la siguiente configuración de seguridad limpia justo después de instanciar Express (`const app = express();`):
+
+A) Ocultar la cabecera sensible de tecnología:
+app.disable('x-powered-by');
+
+B) Configuración de Helmet (Cabeceras HTTP Seguras):
+Configura `helmet` adaptando la Content Security Policy (CSP) para permitir la pasarela de Stripe, Tailwind CDN, Google Fonts y scripts locales sin bloqueos de navegador:
+
+const helmet = require('helmet');
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://cdn.tailwindcss.com",
+          "https://js.stripe.com"
+        ],
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        imgSrc: ["'self'", "data:", "https://*"],
+        frameSrc: ["'self'", "https://js.stripe.com", "https://hooks.stripe.com"],
+        connectSrc: ["'self'", "https://api.stripe.com"],
+      },
+    },
+    crossOriginEmbedderPolicy: false,
+  })
+);
+
+C) Limitador de Peticiones Global (express-rate-limit):
+Implementa un middleware global de rate limit para prevenir ataques de denegación de servicio (DDoS básico) o escaneo automatizado de rutas:
+
+const rateLimit = require('express-rate-limit');
+const globalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // Ventana de 15 minutos
+  max: 200, // Máximo 200 peticiones por IP en esa ventana
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: 'Demasiadas solicitudes desde esta IP, por favor inténtalo de nuevo en 15 minutos.'
+});
+app.use(globalLimiter);
+
+3. VERIFICACIÓN Y COMPROBACIÓN:
+- Asegúrate de que las rutas existentes (`/`, `/servicios/:slug`, `/sobre-conexa`, `/exito`, `/terminos-condiciones`, `/politica-privacidad`, `/politica-cookies`) sigan cargando limpiamente con sus estilos y enlaces a Stripe.
+- Comprueba que la consola no arroje advertencias o errores por bloqueo de CSP.
+- Reinicia el servidor y confirma la correcta ejecución.
