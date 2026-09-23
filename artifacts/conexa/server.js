@@ -63,6 +63,10 @@ app.get("/exito", (_request, response) => {
   });
 });
 
-app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
-  console.log(`CONEXA running on port ${process.env.PORT || 3000}`);
-});
+if (process.env.VERCEL !== "1") {
+  app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
+    console.log(`CONEXA running on port ${process.env.PORT || 3000}`);
+  });
+}
+
+export default app;

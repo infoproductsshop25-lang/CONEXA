@@ -1,0 +1,1 @@
+- [Vercel root for CONEXA](vercel-root.md) — Select the CONEXA package directory as Vercel's Root Directory, not the monorepo root.
