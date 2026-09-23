@@ -1,0 +1,80 @@
+Actúa como un desarrollador Full-Stack experto en Node.js, Express y EJS. Necesito actualizar de forma definitiva la página de Términos y Condiciones de Contratación (`views/terminos.ejs`) de mi plataforma CONEXA para blindar jurídicamente la operativa de los 9 servicios cerrados frente a Stripe y clientes.
+
+Por favor, ejecuta los siguientes pasos:
+
+1. ACTUALIZAR 'views/terminos.ejs':
+Reemplaza por completo el contenido del archivo `views/terminos.ejs` asegurándote de mantener la coherencia visual con el Header, Footer y estilos Tailwind del proyecto (usando un contenedor central legible tipo `<main class="container mx-auto px-4 py-12 max-w-4xl text-slate-800">`). Inyecta el siguiente contenido legal completo:
+
+--------------------------------------------------------------------------------
+TÉRMINOS Y CONDICIONES DE CONTRATACIÓN
+Soluciones Conexa (CONEXA)
+Última actualización: 23 de septiembre de 2026
+
+El presente documento establece las Condiciones Generales de Contratación (en adelante, los "Términos") que rigen la compra y prestación de los servicios digitales ofrecidos por Soluciones Conexa (en adelante, "CONEXA" o el "Prestador"), a través de su sitio web oficial, pasarelas de pago y canales asociados, por parte de cualquier persona física o jurídica (en adelante, el "Cliente").
+
+Al marcar la casilla obligatoria de aceptación en la pasarela de pago o al abonar cualquiera de los servicios, el Cliente reconoce haber leído, entendido y aceptado sin reservas estas condiciones, formalizándose un contrato vinculante por adhesión entre las partes.
+
+1. Identificación del Prestador
+- Nombre comercial: Soluciones Conexa (CONEXA)
+- Correo electrónico de contacto y notificaciones: soluciones.conexa@gmail.com
+- Actividad: Estudio de soluciones digitales productizadas, optimización técnica, captación y consultoría operativa para autónomos y empresas.
+
+2. Objeto del Contrato y Naturaleza de los Servicios
+CONEXA ofrece un catálogo estandarizado de servicios digitales a precio cerrado agrupados en tres bloques temáticos:
+- Web & Rendimiento: Aceleración de Velocidad Web, Terminal Virtual de Cobro In Situ y Landing Page One-Page Exprés.
+- Captación & Automatización: Auditoría Google Maps / SEO Local, Sistema Completo de Email Automation y Chatbot de Respuestas & Captura de Leads.
+- Marca & Legal: Pack de Identidad Visual Exprés, Adaptación Legal Web + RGPD, y Auditoría y Blindaje de Marca en la OEPM.
+
+El alcance específico, los entregables exactos y las características técnicas de cada solución son los descritos en la ficha de cada servicio en el sitio web de CONEXA y en el recibo de compra emitido tras el abono. Cualquier desarrollo, función o requerimiento no especificado de forma expresa en la descripción oficial del servicio queda excluido del alcance del encargo.
+
+3. Cómputo de Plazos y Cronómetro de Entrega
+Nuestra propuesta operativa garantiza tiempos de entrega exprés de veinticuatro (24) o cuarenta y ocho (48) horas laborables, según la tipología del servicio contratado. No obstante, el Cliente acepta de forma expresa las siguientes condiciones temporales indispensables:
+1. Activación del Cronómetro: El plazo de entrega oficial NO comienza en el momento de realizar el pago, sino única y exclusivamente en el instante en que el Cliente remite a CONEXA la totalidad de los datos, materiales, contenidos, logotipos o credenciales de acceso requeridos para la ejecución del trabajo.
+2. Pausa por falta de información: Si el Cliente entrega materiales incompletos, contraseñas erróneas o requiere aclaraciones adicionales, el cómputo de las 24h/48h permanecerá automáticamente en pausa hasta la subsanación total por parte del Cliente.
+3. Días y horas hábiles: Salvo acuerdo previo por escrito, los plazos se computan en días laborables de lunes a viernes (excluyendo festivos nacionales y autonómicos).
+
+4. Precios, Pasarela de Pago y Facturación
+1. Precios: Las tarifas aplicables son las publicadas en el sitio web al momento de la contratación, expresadas en Euros (€).
+2. Pago por adelantado: La totalidad del importe debe ser abonada de forma íntegra con carácter previo al inicio de cualquier trabajo técnico mediante las pasarelas seguras habilitadas (Stripe, tarjetas de débito/crédito, Apple Pay, Google Pay o Bizum).
+3. Seguridad bancaria: CONEXA en ningún momento almacena, accede ni procesa datos de numeración de tarjetas de crédito o débito; dichas operaciones se realizan de forma encriptada bajo los estándares bancarios de Stripe Inc.
+4. Emisión de justificantes y facturas: Tras completarse la transacción, Stripe emite el justificante de pago correspondiente al correo del Cliente. Si el Cliente requiere factura nominativa con NIF/CIF desglosado, deberá solicitarla por correo electrónico a soluciones.conexa@gmail.com aportando sus datos fiscales completos.
+
+5. Obligaciones y Accesos Requeridos al Cliente
+Para que CONEXA pueda ejecutar el servicio con la celeridad prometida, el Cliente asume el compromiso de:
+1. Facilitar accesos válidos: Proveer credenciales técnicas temporales o invitaciones de administrador (WordPress, hosting, Stripe, gestores DNS o plataformas de email) sin dilación.
+2. Propiedad de los contenidos: El Cliente declara bajo su exclusiva responsabilidad que ostenta los derechos de propiedad intelectual e industrial sobre todos los logotipos, marcas, textos, imágenes y bases de datos que transfiera a CONEXA, eximiendo al Prestador de cualquier reclamación, demanda o indemnización de terceros por infracción de copyright o derechos de imagen.
+3. Responsabilidad sobre credenciales: Se recomienda expresamente al Cliente cambiar las contraseñas temporales facilitadas una vez concluido el trabajo. CONEXA destruye y elimina de forma definitiva cualquier credencial facilitada en un plazo máximo de setenta y dos (72) horas tras la entrega del proyecto.
+
+6. Política de Revisiones y Aceptación del Servicio
+1. Ronda de ajustes incluida: Al tratarse de servicios ágiles a precio cerrado, cada pedido incluye una (1) única ronda de revisiones o ajustes menores sobre el entregable presentado, siempre que se soliciten dentro de las cuarenta y ocho (48) horas siguientes al envío del trabajo y se mantengan estrictamente dentro del alcance original contratado.
+2. Aprobación tácita: Si transcurridas 48 horas desde la entrega del trabajo el Cliente no ha solicitado por escrito modificaciones ni revisiones, el servicio se considerará plenamente conforme, aprobado y cerrado de forma definitiva.
+3. Peticiones fuera de alcance: Cualquier cambio de criterio posterior, rediseño integral, cambio en la denominación de marcas o adición de funciones no contratadas requerirá la emisión y abono de un nuevo encargo independiente.
+
+7. Derecho de Desistimiento y Política de No Devolución
+De conformidad con el artículo 103, apartados a) y m) del Real Decreto Legislativo 1/2007, de 16 de noviembre (Ley General para la Defensa de los Consumidores y Usuarios de España) y la Directiva Europea 2011/83/UE:
+1. Exención legal: El derecho de desistimiento de 14 días no es aplicable a los contratos celebrados con CONEXA, dado que versan sobre la prestación de servicios cuya ejecución técnica se inicia de forma inmediata tras la entrega de requisitos, y sobre suministro de contenido digital personalizado y adaptado a las especificaciones del consumidor.
+2. Pérdida expresa del derecho: El Cliente acepta de manera formal y expresa que pierde su derecho de desistimiento y devolución económica una vez que CONEXA ha iniciado la ejecución técnica del servicio o configurado los activos digitales correspondientes.
+3. No se realizarán reembolsos por cancelaciones voluntarias, cambios de opinión o demoras imputables a la falta de respuesta del Cliente una vez que el pago haya sido validado.
+
+8. Condiciones Específicas por Tipología de Servicio
+- Aceleración Web: CONEXA no se hace responsable de caídas de rendimiento futuras derivadas de actualizaciones desatendidas de plugins, cambios en el servidor del proveedor de hosting o modificaciones de código realizadas con posterioridad por terceros.
+- Terminal Virtual de Cobro In Situ: CONEXA realiza la integración técnica y el despliegue del terminal; la aprobación de la cuenta de pagos, las tasas de cobro y la custodia de los fondos son gestionadas en exclusiva por Stripe conforme a su propio contrato de usuario.
+- Auditoría Google Maps / SEO Local: CONEXA entrega la optimización técnica y las recomendaciones estratégicas; en ningún caso se garantiza una posición numérica fija en el ranking de Google, ya que dicho posicionamiento depende de factores ajenos e incontrolables del algoritmo de Google.
+- Auditoría y Blindaje de Marca en la OEPM: El servicio comprende la investigación previa de viabilidad, la clasificación técnica de Niza y la preparación formal de la documentación para el expediente de solicitud. La tasa oficial administrativa de la OEPM (aprox. 125 €) NO está incluida en el precio de CONEXA y debe ser abonada directamente por el solicitante en la sede electrónica del organismo público. Asimismo, la concesión final del registro es potestad administrativa exclusiva de la OEPM tras los plazos de examen legal y posibles oposiciones de terceros.
+
+9. Limitación de Responsabilidad
+1. CONEXA prestará sus servicios con la máxima diligencia profesional, pero no responderá por lucro cesante, pérdidas comerciales indirectas, caídas temporales de servidores externos (Vercel, Stripe, hostings de terceros) o cambios de políticas operativas de Google, Apple o la Administración Pública.
+2. La responsabilidad económica máxima acumulada de CONEXA frente al Cliente por cualquier reclamación derivada del presente contrato quedará limitada, en todo caso, al importe exacto efectivamente abonado por el Cliente por el servicio causante del conflicto.
+
+10. Modificaciones y Actualizaciones
+CONEXA se reserva el derecho de modificar o actualizar estos Términos en cualquier momento para adaptarlos a novedades normativas, técnicas o de mercado. Las modificaciones entrarán en vigor a partir de su publicación en el sitio web, aplicándose a todas las contrataciones formalizadas a partir de dicha fecha.
+
+11. Legislación Aplicable y Jurisdicción
+Los presentes Términos se regirán e interpretarán de conformidad con la legislación española. Ambas partes acuerdan someter cualquier discrepancia o controversia que pudiera derivarse del presente contrato a los Juzgados y Tribunales correspondientes conforme a la normativa procesal vigente, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.
+--------------------------------------------------------------------------------
+
+2. VERIFICACIÓN DE RUTAS Y FOOTER:
+- Revisa que en `server.js` exista la ruta: `app.get('/terminos-condiciones', (req, res) => { res.render('terminos'); });`
+- Asegúrate de que el enlace en el footer apunte exactamente a `/terminos-condiciones`.
+
+Aplica los cambios, verifica que la página renderice limpia y sin errores tipográficos, y reinicia el servidor.
