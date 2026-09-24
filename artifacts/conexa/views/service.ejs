@@ -9,6 +9,27 @@
     <meta name="theme-color" content="#020617" />
     <title><%= pageTitle %></title>
     <link rel="icon" href="/images/favicon.jpeg" type="image/jpeg" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              ink: "#020617",
+              teal: "#84cc16",
+              mist: "#f8fafc",
+              coral: "#0f172a",
+            },
+          },
+        },
+      };
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">    
