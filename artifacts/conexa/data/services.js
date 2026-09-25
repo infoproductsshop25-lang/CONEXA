@@ -120,63 +120,49 @@ const services = [
   },
 
   // ==========================================
-  // BLOQUE 3: MARCA & LEGAL
+  // BLOQUE 3: MARCA & CONFIANZA DIGITAL
   // ==========================================
-  {
-    id: "brand-low",
-    title: "Pack de Identidad Visual Exprés",
-    price: 49,
-    time: "48h",
-    category: "Marca & Legal",
-    tier: "Bajo",
-    slug: "pack-identidad-visual-expres",
-    stripeUrl: "https://buy.stripe.com/00wfZjc1n5tYcPRdDS0gw0j",
-    subtitle: "Unifica tu imagen de marca y transmite la solidez de una empresa consolidada.",
-    problem:
-      "Usar colores diferentes en cada red social, fuentes descuadradas y un logo pixelado o con fondo blanco destruye la credibilidad que necesitas para cobrar tarifas profesionales.",
+  { 
+    id: 'brand-low', 
+    title: 'Sistema NFC & QR de Reseñas Directas de Google', 
+    price: 49, time: '24h', category: 'Marca & Confianza', tier: 'Bajo',
+    slug: 'resenas-google-nfc-qr',
+    stripeUrl: 'https://buy.stripe.com/00wfZjc1n5tYcPRdDS0gw0j',
+    subtitle: 'Consigue valoraciones de 5 estrellas al instante en tu mostrador sin fricción.',
+    problem: 'El 90% de los clientes satisfechos dicen que dejarán una reseña en Google, pero nunca lo hacen porque les da pereza buscar el negocio y encontrar el botón de valorar.',
     solution: [
-      "Brandboard visual en PDF con códigos de color corporativos exactos (HEX/RGB) y tipografías recomendadas.",
-      "Vectorización y entrega de tu logotipo en formatos profesionales (PNG fondo transparente y SVG).",
-      "Pack de imágenes de cabecera y avatares adaptados a las medidas exactas de tus redes sociales.",
-    ],
+      'Enlace oficial directo acortado que abre el pop-up de 5 estrellas en 1 segundo.',
+      'Diseño corporativo de alta resolución listo para imprimir en adhesivo o soporte de mostrador.',
+      'Codificación y archivo listo para vincular a cualquier pegatina o placa NFC.'
+    ]
   },
-  {
-    id: "brand-mid",
-    title: "Adaptación Legal Web + RGPD",
-    price: 89,
-    time: "24h",
-    category: "Marca & Legal",
-    tier: "Medio",
-    slug: "adaptacion-legal-web-rgpd",
-    stripeUrl: "https://buy.stripe.com/5kQ9AVd5r7C62bd43i0gw0k",
-    subtitle: "Protege tu negocio frente a multas de protección de datos con textos en regla.",
-    problem:
-      "Copiar avisos legales de otras páginas o no contar con un banner de cookies real deja a tu empresa expuesta a inspecciones y sanciones graves de la Agencia Española de Protección de Datos.",
+  { 
+    id: 'brand-mid', 
+    title: 'Adaptación Legal Web + RGPD', 
+    price: 89, time: '24h', category: 'Marca & Confianza', tier: 'Medio',
+    slug: 'adaptacion-legal-web-rgpd',
+    stripeUrl: 'https://buy.stripe.com/5kQ9AVd5r7C62bd43i0gw0k',
+    subtitle: 'Protege tu negocio frente a multas de protección de datos con textos en regla.',
+    problem: 'Copiar avisos legales de otras páginas o no contar con un banner de cookies real deja a tu empresa expuesta a inspecciones y sanciones graves de la Agencia Española de Protección de Datos.',
     solution: [
-      "Redacción personalizada de Aviso Legal, Política de Privacidad y Política de Cookies adaptadas a tu actividad.",
-      "Configuración e instalación del banner técnico de cookies por niveles conforme a la normativa europea.",
-      "Inyección de la primera capa legal informativa con casilla obligatoria en tus formularios de contacto.",
-    ],
+      'Redacción personalizada de Aviso Legal, Política de Privacidad y Política de Cookies adaptadas a tu actividad.',
+      'Configuración e instalación del banner técnico de cookies por niveles conforme a la normativa europea.',
+      'Inyección de la primera capa legal informativa con casilla obligatoria en tus formularios de contacto.'
+    ]
   },
-  {
-    id: "brand-high",
-    title: "Auditoría y Blindaje de Marca en la OEPM",
-    price: 149,
-    time: "48h",
-    category: "Marca & Legal",
-    tier: "Alto",
-    slug: "auditoria-blindaje-marca-oepm",
-    stripeUrl: "https://buy.stripe.com/8x2cN78PbbSmaHJeHW0gw0l",
-    subtitle: "Protege el nombre de tu empresa en España antes de que te lo quiten o te demanden.",
-    problem:
-      "Tener un dominio web o una sociedad no te da la propiedad sobre tu nombre comercial. Si un tercero registra tu marca en la OEPM, puede obligarte a cerrar tu web, retirar rótulos y pagar indemnizaciones.",
+  { 
+    id: 'brand-high', 
+    title: 'Blindaje de Cabeceras HTTP & Certificación A+', 
+    price: 139, time: '48h', category: 'Marca & Confianza', tier: 'Alto',
+    slug: 'blindaje-cabeceras-http-seguridad',
+    stripeUrl: 'https://buy.stripe.com/8x2cN78PbbSmaHJeHW0gw0l',
+    subtitle: 'Protección perimetral de servidor contra inyecciones y robo de datos.',
+    problem: 'La mayoría de webs corporativas tienen calificación F en auditorías de seguridad, careciendo de cabeceras CSP, HSTS y directivas anti-clickjacking, dejando el dominio vulnerable.',
     solution: [
-      "Búsqueda técnica previa de viabilidad fonética en las bases oficiales de la OEPM para evitar oposiciones de otras marcas.",
-      "Clasificación estricta de las actividades de tu negocio bajo el Nomenclátor Internacional de Niza.",
-      "Elaboración del expediente técnico oficial con todos los datos y distintivo vectorizado listo para presentar.",
-      "Guía paso a paso con capturas para el pago telemático de las tasas oficiales en la sede electrónica.",
-    ],
-  },
-];
-
+      'Configuración en servidor de las directivas de seguridad críticas (CSP, HSTS, X-Frame-Options).',
+      'Ocultación de cabeceras informativas de versión de servidor frente a escaneos automatizados.',
+      'Comprobación y certificación oficial verificada con calificación A/A+ en securityheaders.com.',
+      'Opción a cuota mensual de mantenimiento de directivas y excepciones por 29 €/mes.'
+    ]
+  }
 export default services;
