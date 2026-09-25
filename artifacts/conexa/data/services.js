@@ -165,4 +165,4 @@ const services = [
       'Opción a cuota mensual de mantenimiento de directivas y excepciones por 29 €/mes.'
     ]
   }
-export default services;
+module.exports = services;
