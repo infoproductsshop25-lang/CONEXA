@@ -619,9 +619,17 @@ body {
               <p class="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-lime-500">¿Listo para empezar?</p>
               <h2 class="font-display text-4xl font-extrabold leading-none tracking-[-0.065em] sm:text-6xl">Hagamos que avance.</h2>
               <p class="mt-5 max-w-lg text-base leading-7 text-white/60">Selecciona un servicio arriba y escríbenos. Te responderemos con los siguientes pasos.</p>
-              <a id="request-link" href="https://wa.me/message/HPFTPCG3MEV4E1" target="_blank" rel="noopener noreferrer" class="...">
-              </a>
-            </div>
+              <div class="mt-8">
+  <a 
+    id="request-link" 
+    href="https://wa.me/message/HPFTPCG3MEV4E1" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="inline-flex items-center gap-2 rounded-full bg-lime-400 px-6 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-lime-500 hover:scale-105 shadow-md"
+  >
+    Solicitar un servicio ↗
+  </a>
+</div>
             <div class="request-shape request-shape-one"></div>
             <div class="request-shape request-shape-two"></div>
           </div>
@@ -637,7 +645,7 @@ body {
       const requestLink = document.querySelector("#request-link");
       if (requestLink) {
         requestLink.href = `https://wa.me/message/HPFTPCG3MEV4E1?text=${text}`;
-}
+          }
         });
       });
 
