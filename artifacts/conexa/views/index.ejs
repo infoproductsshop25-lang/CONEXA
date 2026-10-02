@@ -632,13 +632,11 @@ body {
     </div>
     <script>
       document.querySelectorAll("[data-service]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const text = encodeURIComponent(`Hola CONEXA, quiero solicitar: ${button.dataset.service}`);
-const requestLink = document.querySelector("#request-link");
-if (requestLink) {
-  requestLink.href = `https://wa.me/message/HPFTPCG3MEV4E1?text=${text}`;
-  requestLink.target = "_blank";
-  requestLink.rel = "noopener noreferrer";
+    button.addEventListener("click", () => {
+      const text = encodeURIComponent(`Hola CONEXA, quiero solicitar: ${button.dataset.service}`);
+      const requestLink = document.querySelector("#request-link");
+      if (requestLink) {
+        requestLink.href = `https://wa.me/message/HPFTPCG3MEV4E1?text=${text}`;
 }
         });
       });
