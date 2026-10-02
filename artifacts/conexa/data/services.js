@@ -125,7 +125,7 @@ const services = [
   { 
     id: 'brand-low', 
     title: 'Sistema NFC & QR de Reseñas Directas de Google', 
-    price: 29, time: '24h', category: 'Marca & Confianza', tier: 'Bajo',
+    price: 29, time: '24h + Envío', category: 'Marca & Confianza', tier: 'Bajo',
     slug: 'resenas-google-nfc-qr',
     stripeUrl: 'https://buy.stripe.com/00wfZjc1n5tYcPRdDS0gw0j',
     subtitle: 'Consigue valoraciones de 5 estrellas al instante en tu mostrador sin fricción.',
